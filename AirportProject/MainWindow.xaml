@@ -1,0 +1,33 @@
+﻿<Window x:Class="AirportProject.MainWindow"
+        Icon="C:\Users\Даниил\Desktop\AirportProject\AirportProject\icon_air.png"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirportProject"
+        mc:Ignorable="d"
+        Title="Авиакомпания Ласточка" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="1920x1200_849668_[www.ArtFile.ru].jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="login_txt" HorizontalAlignment="Left" Height="23" Margin="330,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="16" BorderBrush="White" SelectionBrush="#FF0075D7"/>
+        <Button x:Name="new_client" Content="Регистрация" HorizontalAlignment="Left" Margin="337,254,0,0" VerticalAlignment="Top" Width="106" FontFamily="Times New Roman" FontSize="16" BorderBrush="White" Background="#FF006CC7" Height="24" Foreground="White" ClickMode="Press"/>
+        <Button x:Name="log_in" Content="Войти" HorizontalAlignment="Left" Margin="337,283,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="1.04,0.401" Click="log_in_Click" FontFamily="Times New Roman" FontSize="16" BorderBrush="White" Background="#FF006CC7" Height="24" Foreground="White" ClickMode="Press"/>
+        <PasswordBox x:Name="pass_txt" HorizontalAlignment="Left" Margin="330,209,0,0" VerticalAlignment="Top" Width="120" Height="23" FontFamily="Times New Roman" FontSize="16" BorderBrush="White"/>
+        <Label x:Name="error" Content="Неправильные данные" HorizontalAlignment="Left" Margin="321,321,0,0" VerticalAlignment="Top" Width="148" Foreground="Red" FontFamily="Times New Roman" FontSize="16" Visibility="Hidden"  />
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="330,132,0,0" VerticalAlignment="Top" Width="73" FontFamily="Times New Roman" FontSize="16" Foreground="#FFFFFDFD">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="330,181,0,0" VerticalAlignment="Top" Width="73" FontFamily="Times New Roman" FontSize="16" Foreground="#FFFFFDFD">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Белкин Даниил Валерьевич ПКС-304 " HorizontalAlignment="Left" Margin="10,381,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Foreground="White"/>
+        <Label Content="Разработка информационной системы для авикомпании" HorizontalAlignment="Left" Margin="393,381,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Foreground="White"/>
+    </Grid>
+</Window>

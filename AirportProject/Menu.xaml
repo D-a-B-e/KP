@@ -1,0 +1,21 @@
+﻿<Window x:Class="AirportProject.Menu"
+        WindowStartupLocation="CenterScreen"
+        Icon="C:\Users\Даниил\Desktop\AirportProject\AirportProject\icon_air.png"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirportProject"
+        mc:Ignorable="d"
+        Title="Авиакомпания Ласточка" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="airplane.jpg.jpg"/>
+        </Grid.Background>
+        <Button x:Name="info_but" Content="Статистика" HorizontalAlignment="Left" Margin="302,130,0,0" VerticalAlignment="Top" Width="196" Height="64" BorderBrush="White" Background="#FF006CC7"  Foreground="White" ClickMode="Press" FontFamily="Times New Roman" FontSize="16" Visibility="Hidden"  />
+        <Button x:Name="add_fly" Content="Добавить рейс" HorizontalAlignment="Left" Margin="302,59,0,0" VerticalAlignment="Top" Width="196" Height="64" BorderBrush="White" Background="#FF006CC7"  Foreground="White" ClickMode="Press" FontFamily="Times New Roman" FontSize="16" Visibility="Hidden"  />
+        <Button x:Name="buy_ticket_but" Content="Купить билет" HorizontalAlignment="Left" Margin="302,128,0,0" VerticalAlignment="Top" Width="196" Height="66" BorderBrush="White" Background="#FF006CC7"  Foreground="White" ClickMode="Press" FontFamily="Times New Roman" FontSize="16" Visibility="Hidden" />
+        <Button x:Name="back" Content="Выход" HorizontalAlignment="Left" Margin="302,199,0,0" VerticalAlignment="Top" Width="196" Height="66" BorderBrush="White" Background="#FF006CC7"  Foreground="White" ClickMode="Press" FontFamily="Times New Roman" FontSize="16" Click="back_Click" />
+
+    </Grid>
+</Window>

@@ -1,0 +1,88 @@
+﻿<Window x:Class="AirportProject.SignUp"
+        WindowStartupLocation="CenterScreen"
+        Icon="C:\Users\Даниил\Desktop\AirportProject\AirportProject\icon_air.png"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirportProject"
+        mc:Ignorable="d"
+        Title="Авиакомпания Ласточка" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="mota_ru_0061415.jpg"/>
+        </Grid.Background>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="340,353,0,0" VerticalAlignment="Top" Width="106" Click="Back" FontFamily="Times New Roman" FontSize="16" BorderBrush="White" Background="#FF427BAC" Height="24" Foreground="White" ClickMode="Press"/>
+        <Button Content="Продолжить" HorizontalAlignment="Left" Margin="340,324,0,0" VerticalAlignment="Top" Width="106" Click="Continue" FontFamily="Times New Roman" FontSize="16" BorderBrush="White" Background="#FF427BAC" Height="24" Foreground="White" ClickMode="Press"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="150,14,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="310,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="150,45,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="last_name" HorizontalAlignment="Left" Height="23" Margin="310,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="150,76,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="first_name" HorizontalAlignment="Left" Height="23" Margin="310,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="150,107,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="middle_name" HorizontalAlignment="Left" Height="23" Margin="310,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="150,138,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="23" Margin="310,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Почта" HorizontalAlignment="Left" Margin="150,169,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="310,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Паспорт" HorizontalAlignment="Left" Margin="150,227,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="passport" HorizontalAlignment="Left" Height="24" Margin="310,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontFamily="Times New Roman" FontSize="16"/>
+        <DatePicker x:Name="dob" HorizontalAlignment="Left" Margin="310,200,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="150,200,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="login_error" Content="" HorizontalAlignment="Left" Margin="502,12,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="last_name_error" Content="" HorizontalAlignment="Left" Margin="502,43,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="first_name_error" Content="" HorizontalAlignment="Left" Margin="502,74,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="middle_name_error" Content="" HorizontalAlignment="Left" Margin="502,105,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="phone_error" Content="" HorizontalAlignment="Left" Margin="502,136,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="email_error" Content="" HorizontalAlignment="Left" Margin="502,167,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="passport_error" Content="" HorizontalAlignment="Left" Margin="502,229,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="dob_error" Content="" HorizontalAlignment="Left" Margin="502,198,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+        <PasswordBox x:Name="new_password" HorizontalAlignment="Left" Margin="310,263,0,0" VerticalAlignment="Top" Width="178" Height="24" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="150,261,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <PasswordBox x:Name="confirm_password" HorizontalAlignment="Left" Margin="310,295,0,0" VerticalAlignment="Top" Width="178" Height="24" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Подтвердите пароль" HorizontalAlignment="Left" Margin="150,293,0,0" VerticalAlignment="Top" Width="154" FontFamily="Times New Roman" FontSize="16" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="password_error" Content="" HorizontalAlignment="Left" Margin="502,293,0,0" VerticalAlignment="Top" Width="186" Foreground="Red" FontFamily="Times New Roman" FontSize="16"/>
+
+    </Grid>
+</Window>
